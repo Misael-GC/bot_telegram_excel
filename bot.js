@@ -5,6 +5,14 @@ require('dotenv').config();
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
+const filePath = 'datos.xlsx';
+
+// Verificar si el archivo existe y eliminarlo
+if (fs.existsSync(filePath)) {
+    fs.unlinkSync(filePath);
+}
+
+// Crear un nuevo libro de Excel
 let workbook = new ExcelJS.Workbook();
 let worksheet = workbook.addWorksheet('Datos');
 
@@ -32,7 +40,7 @@ bot.on('text', (ctx) => {
 
     worksheet.addRow(row);
 
-    workbook.xlsx.writeFile('datos.xlsx')
+    workbook.xlsx.writeFile(filePath)
         .then(() => {
             ctx.reply('Mensaje registrado en el archivo Excel.');
         })
@@ -44,8 +52,6 @@ bot.on('text', (ctx) => {
 
 // Manejar el comando /download
 bot.command('download', (ctx) => {
-    const filePath = 'datos.xlsx';
-
     workbook.xlsx.writeFile(filePath)
         .then(() => {
             ctx.replyWithDocument({ source: filePath })
