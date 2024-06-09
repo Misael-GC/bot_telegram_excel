@@ -1,60 +1,3 @@
-
-# Telegram Bot con Telegraf y ExcelJS
-
-Este bot de Telegram registra los mensajes de los usuarios en un archivo Excel y permite la descarga del archivo.
-
-## Requisitos
-
-- Node.js
-- npm
-- Una cuenta en Telegram y un bot creado con el BotFather
-
-## Instalación
-
-1. Clona este repositorio:
-
-```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
-```
-
-2. Instala las dependencias:
-
-```bash
-npm install
-```
-
-3. Crea un archivo `.env` en el directorio raíz del proyecto y añade tu token de bot de Telegram:
-
-```
-BOT_TOKEN=tu_token_de_telegram
-```
-
-4. Ejecuta el bot:
-
-```bash
-node bot.js
-```
-
-## Uso
-
-### Comando /start
-
-Inicia la interacción con el bot. El bot responderá con un mensaje de bienvenida e instrucciones.
-
-### Registro de Mensajes
-
-Envía cualquier mensaje de texto al bot. El bot registrará el mensaje en un archivo Excel (`datos.xlsx`) y confirmará la acción.
-
-### Comando /download
-
-Envía el comando `/download` para descargar el archivo Excel que contiene los mensajes registrados.
-
-## Código
-
-El código del bot está estructurado de la siguiente manera:
-
-```javascript
 const { Telegraf } = require('telegraf');
 const ExcelJS = require('exceljs');
 const fs = require('fs');
@@ -128,18 +71,3 @@ bot.launch()
     .catch((error) => {
         console.error('Error al iniciar el bot:', error);
     });
-```
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request para discutir cualquier cambio que desees realizar.
-
-## Licencia
-
-Este proyecto está licenciado bajo la [MIT License](LICENSE).
-```
-
-### Notas Adicionales:
-
-- Asegúrate de reemplazar `https://github.com/tu-usuario/tu-repositorio.git` con la URL real de tu repositorio.
-- Añade cualquier información adicional que consideres necesaria, como configuraciones específicas o dependencias adicionales.
