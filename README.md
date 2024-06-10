@@ -144,4 +144,4 @@ Este proyecto está licenciado bajo la [MIT License](LICENSE).
 - URL: https://github.com/Misael-GC/bot_telegram_excel?tab=readme-ov-file
 - Se agrega código para checar si ya existe un archivo excel lo elimine se fabrique otro con los nuevos datos
 - Se crea una rama donde el archivo existente se agreguen las actualizaciones
-
+- Te recomiendo ver el siguiente [link](https://www.notion.so/Bot-en-Telegram-para-descargar-mensajes-en-un-excel-3a7e11a2156f41d2a61a236cb744b86f)
