@@ -141,5 +141,7 @@ Este proyecto está licenciado bajo la [MIT License](LICENSE).
 
 ### Notas Adicionales:
 
-- Asegúrate de reemplazar `https://github.com/tu-usuario/tu-repositorio.git` con la URL real de tu repositorio.
-- Añade cualquier información adicional que consideres necesaria, como configuraciones específicas o dependencias adicionales.
+- URL: https://github.com/Misael-GC/bot_telegram_excel?tab=readme-ov-file
+- Se agrega código para checar si ya existe un archivo excel lo elimine se fabrique otro con los nuevos datos
+- Se crea una rama donde el archivo existente se agreguen las actualizaciones
+
