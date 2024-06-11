@@ -15,7 +15,7 @@ Este bot de Telegram registra los mensajes de los usuarios en un archivo Excel y
 
 ```bash
 git clone git@github.com:Misael-GC/bot_telegram_excel.git
-cd tu-repositorio
+
 ```
 
 2. Instala las dependencias:
